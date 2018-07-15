@@ -1,7 +1,6 @@
 class ListaNegociacoes{
 
   constructor(){
-
     this._negociacoes = []
   }
 
@@ -12,6 +11,6 @@ class ListaNegociacoes{
 
   get negociacoes(){
 
-    return this._negociacoes;
+    return [].concat(this._negociacoes);
   }
 }
