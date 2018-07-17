@@ -1,7 +1,7 @@
 class NegociacaoView {
     
     constructor(elemento){
-        this._elemento = elemento;
+        this._elemento = elemento; //guarda o elemento passado no parâmetro em uma variável
     }
     
     _template() {
@@ -25,6 +25,6 @@ class NegociacaoView {
     }
     
     update() {
-        this._elemento.innerHTML = this._template();
+        this._elemento.innerHTML = this._template(); //Pega o elemento passado por parâmetro através de uma new NegociacaoView no controller e torna a string template em objetos do DOM
     }
 }
