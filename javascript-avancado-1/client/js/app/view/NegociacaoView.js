@@ -1,10 +1,10 @@
 class NegociacaoView {
-    
+
     constructor(elemento){
         this._elemento = elemento; //guarda o elemento passado no parâmetro em uma variável
     }
-    
-    _template() {
+
+    _template(model) {
         return `<table class="table table-hover table-bordered">
         <thead>
             <tr>
@@ -16,15 +16,25 @@ class NegociacaoView {
         </thead>
 
         <tbody>
+          ${model.negociacoes.map((n) => {
+            return `
+              <tr>
+                <td>${DateHelper.dataParaTexto(n.data)}</td>
+                <td>${n.quantidade}</td>
+                <td>${n.valor}</td>
+                <td>${n.volume}</td>
+              </tr>
+            `
+          }).join('')}
         </tbody>
 
         <tfoot>
         </tfoot>
     </table>`;
-    
+
     }
-    
-    update() {
-        this._elemento.innerHTML = this._template(); //Pega o elemento passado por parâmetro através de uma new NegociacaoView no controller e torna a string template em objetos do DOM
+
+    update(model) {
+        this._elemento.innerHTML = this._template(model); //Pega o elemento passado por parâmetro através de uma new NegociacaoView no controller e torna a string template em objetos do DOM
     }
 }
