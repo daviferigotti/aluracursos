@@ -25,12 +25,12 @@ class NegociacaoView {
                 <td>${n.volume}</td>
               </tr>
             `
-          }).join('')} //O método join() junta todos os elementos de uma array (ou um array-like object) em uma string e retorna esta string.
+          }).join('')} 
         </tbody>
 
         <tfoot>
         </tfoot>
-    </table>`;
+    </table>`; //O método join() junta todos os elementos de uma array (ou um array-like object) em uma string e retorna esta string.
 
     }
 
