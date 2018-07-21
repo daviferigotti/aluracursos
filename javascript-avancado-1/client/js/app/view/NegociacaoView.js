@@ -1,9 +1,18 @@
-class NegociacaoView {
+class NegociacaoView extends View {
+
+/*
+
+OBSERVAÇÃO IMPORTANTE: Estou comentando esta parte do código, pois será herdado de View.js,
+mas não vou excluir pois quero me lembrar de como foi feito inicialmente.
 
     constructor(elemento){
         this._elemento = elemento; //guarda o elemento passado no parâmetro em uma variável, neste caso,
                                   //o elemento é a div com id negociacoesView, passado como parâmetro lá no
                                   //NegociacaoController
+    }
+*/
+    constructor(elemento){
+      super(elemento);
     }
 
     _template(model) {
@@ -43,9 +52,15 @@ class NegociacaoView {
 
     }
 
+/*
+    OBSERVAÇÃO IMPORTANTE: Estou comentando esta parte do código, pois será herdado de View.js,
+    mas não vou excluir pois quero me lembrar de como foi feito inicialmente.
+
+
     update(model) {
         this._elemento.innerHTML = this._template(model); //Pega o elemento passado por parâmetro através de uma
                                                           //new NegociacaoView no controller e torna a string
                                                           //template em objetos do DOM
     }
+    */
 }

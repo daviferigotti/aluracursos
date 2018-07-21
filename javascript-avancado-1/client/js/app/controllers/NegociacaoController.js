@@ -45,7 +45,7 @@ class NegociacaoController {
     this._mensagemView.update(this._mensagem);
 
     this._limpaFormulario();
-    
+
 
    }
 
