@@ -7,11 +7,12 @@ class NegociacaoController {
     this._inputData = $('#data');
     this._inputQuantidade = $('#quantidade');
     this._inputValor = $('#valor');
+    /*
     this._listaNegociacoes = new ListaNegociacoes(model => //arrow function possui escopo léxico, não dinâmico.
                                                             //neste caso, o this ficará NegociacaoController, não
                                                             // será o this do contexto que for chamado.
       this._negociacoesView.update(model));
-
+      */
     this._negociacoesView = new NegociacaoView($('#negociacoesView'));
     this._negociacoesView.update(this._listaNegociacoes);
 
