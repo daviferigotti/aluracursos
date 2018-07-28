@@ -18,7 +18,7 @@ class NegociacaoController {
   }
 
   adiciona(event){
-    event.preventDefault(); //prevenindo o comportamento padrão do navegdor de recarregar a pagina
+    event.preventDefault();  //prevenindo o comportamento padrão do navegdor de recarregar a pagina
 
     /*
     a forma abaixo seria a mais fácil de fazer, mas o intrustor preferiu outra para mostrar alumas funções.
