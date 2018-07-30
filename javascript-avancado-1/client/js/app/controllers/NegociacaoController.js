@@ -7,12 +7,23 @@ class NegociacaoController {
     this._inputData = $('#data');
     this._inputQuantidade = $('#quantidade');
     this._inputValor = $('#valor');
-    /*
-    this._listaNegociacoes = new ListaNegociacoes(model => //arrow function possui escopo léxico, não dinâmico.
-                                                            //neste caso, o this ficará NegociacaoController, não
-                                                            // será o this do contexto que for chamado.
-      this._negociacoesView.update(model));
-      */
+
+    let self = this;
+    this._listaNegociacoes = new Proxy(new ListaNegociacoes(), {
+            get(target, prop, receiver){
+              if(['adiciona', 'esvazia'].includes(prop) && typeof(target[prop] == typeof(Function))){
+                return function(){
+
+                  console.log(`interceptando ${prop}`);
+                  Reflect.apply(target[prop], target, arguments);
+                  self._negociacoesView.update(target);
+                }
+              }
+
+              return Reflect.get(target, prop, receiver);
+            }
+          });
+
     this._negociacoesView = new NegociacaoView($('#negociacoesView'));
     this._negociacoesView.update(this._listaNegociacoes);
 
