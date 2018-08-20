@@ -1,0 +1,21 @@
+{
+  "name": "public",
+  "version": "0.0.0",
+  "homepage": "https://github.com/diegocacilha/aluracursos",
+  "authors": [
+    "Diego Armando Cacilha <cacilha.tec@gmail.com>"
+  ],
+  "description": "Frontend do app desenvolvido no curso da Alura",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.7.3",
+    "bootstrap": "~4.1.3"
+  }
+}

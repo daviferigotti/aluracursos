@@ -1,0 +1,3 @@
+#essa pasta é para o bower
+#quando abrir o projeto pela primeira vez, execute bower install 
+bower_components

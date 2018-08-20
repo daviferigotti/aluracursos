@@ -1,1 +1,24 @@
-angularJs
+Já que você criou esse arquivo, vou utilizá-lo para algumas informações importantes.
+
+Use sempre o npm pra controlar os seus pacotes dos módulos que seu projeto usa.
+Lembre-se que ele é usado para pacotes banckend
+Alguns comandos:
+  npm install <nome do módulo> --save
+  npm search <nome do módulo>
+  npm init
+
+Já para o frontend existe o Bower.
+O princípio é o mesmo.
+Alguns comandos:
+  bower install -S <nome do pacote>
+  bower init
+
+É sempre interessante incluir as pastas onde ficam os módulos do projeto no .gitignore.
+Quando você fizer um pull, lembre-se de executar o npm install e o bower install.
+Esses dois comandos devem ser executados por conta das possíveis atualizações que podem ter ocorrido.
+Caso alguém tenha incluído um novo módulo/pacote, com o install esses novos pacotes serão
+carregados para o projeto.
+
+Um pacote legal para o backend é o Nodemon. Instale-o usando o npm install. Mas não precisa
+usar o --save já que esse módulo só serve para ambiente de desenvolvimento. Com o Nodemon
+você não precisa encerrar o node e execulá-lo novamente sempre que alterar algo.
