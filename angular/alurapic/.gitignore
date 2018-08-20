@@ -1,5 +1,8 @@
+#comentários importantes para o projeto
+node_modules/
+
+#Cometários exclusivos do Davi (eu nao sei do que se trata) :)
+.dpl/
 .tmp
 .DS_Store
 .DS_Store?
-node_modules/
-.dpl/

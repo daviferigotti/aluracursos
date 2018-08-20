@@ -1,0 +1,27 @@
+{
+  "name": "alurapic",
+  "version": "1.0.0",
+  "description": "Projeto para estudos",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": [
+    {
+      "name": "Diego Armando Cacilha"
+    },
+    {
+      "name": "Davi Ferigotti"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "nedb": "^1.8.0"
+  }
+}
