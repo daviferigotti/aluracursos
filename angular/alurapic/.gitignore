@@ -1,5 +1,9 @@
+#comentários importantes para o projeto
+node_modules/
+#public/bower_components
+
+#Cometários exclusivos do Davi (eu nao sei do que se trata) :)
+.dpl/
 .tmp
 .DS_Store
 .DS_Store?
-node_modules/
-.dpl/
